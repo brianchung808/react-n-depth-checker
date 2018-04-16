@@ -1,0 +1,54 @@
+{
+	"name": "react-n-depth-checker",
+	"version": "0.0.0",
+	"description": "React Component that checks n-levels deep for `shouldComponentUpdate`",
+	"license": "MIT",
+	"repository": "brianchung808/react-n-depth-checker",
+	"author": {
+		"name": "Brian Chung",
+		"email": "brianchung23@gmail.com",
+		"url": "https://www.brianchung.me"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"main": "./lib.js",
+	"scripts": {
+		"build": "babel ./index.js -o lib.js",
+		"test": "nyc ava",
+		"precommit": "pretty-quick --staged"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {
+		"lodash": "^4.17.5"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.0.0-beta.44",
+		"@babel/core": "^7.0.0-beta.44",
+		"@babel/preset-env": "^7.0.0-beta.44",
+		"ava": "^0.20.0",
+		"babel-plugin-lodash": "^3.3.2",
+		"codecov": "^2.2.0",
+		"esm": "^3.0.18",
+		"microbundle": "^0.4.4",
+		"nyc": "^11.0.0",
+		"pretty-quick": "^1.4.1"
+	},
+	"peerDependencies": {
+		"react": "^16.3.2"
+	},
+	"ava": {
+		"require": "esm"
+	},
+	"nyc": {
+		"reporter": [
+			"lcov",
+			"text"
+		]
+	}
+}
