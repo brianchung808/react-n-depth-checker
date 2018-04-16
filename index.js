@@ -19,7 +19,7 @@ const createChecker = (depth = 0) =>
 	class NDepthChecker extends React.Component {
 		shouldComponentUpdate(nextProps, nextState) {
 			const f = compare(depth);
-			return f(this.props, nextProps) && f(this.state, nextState);
+			return !(f(this.props, nextProps) && f(this.state, nextState));
 		}
 	};
 
