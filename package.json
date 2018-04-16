@@ -10,7 +10,7 @@
 		"url": "https://www.brianchung.me"
 	},
 	"engines": {
-		"node": ">=4"
+		"node": ">=6"
 	},
 	"main": "./lib.js",
 	"scripts": {
