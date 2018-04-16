@@ -23,10 +23,10 @@ $ npm install react-n-depth-checker
 ```js
 const createChecker = require('react-n-depth-checker');
 
-const DepthOneCheckerComponent = createChecker(1);
+const DepthFiveCheckerComponent = createChecker(5);
 
-const MyComponent extends DepthOneCheckerComponent {
-	// Will go one level further than `PureComponent`'s shallow comparison.
+const MyComponent extends DepthFiveCheckerComponent {
+	// Will go five levels further than `PureComponent`'s shallow comparison.
 	// At depth=1, will iterate through any prop that is an array/object and then do a shallow compare.
 	propTypes: {
 		anArray: PropTypes.array

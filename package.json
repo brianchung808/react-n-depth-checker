@@ -37,10 +37,11 @@
 		"esm": "^3.0.18",
 		"microbundle": "^0.4.4",
 		"nyc": "^11.0.0",
-		"pretty-quick": "^1.4.1"
+		"pretty-quick": "^1.4.1",
+		"react": "^16.3.2"
 	},
 	"peerDependencies": {
-		"react": "^16.3.2"
+		"react": ">= 16"
 	},
 	"ava": {
 		"require": "esm"
