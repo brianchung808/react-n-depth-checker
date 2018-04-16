@@ -19,7 +19,8 @@
 		"precommit": "pretty-quick --staged"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"lib.js"
 	],
 	"keywords": [
 		""
