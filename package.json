@@ -1,6 +1,6 @@
 {
 	"name": "react-n-depth-checker",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "React Component that checks n-levels deep for `shouldComponentUpdate`",
 	"license": "MIT",
 	"repository": "brianchung808/react-n-depth-checker",
